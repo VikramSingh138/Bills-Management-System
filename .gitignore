@@ -1,0 +1,25 @@
+# Node
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment
+.env
+.env.local
+
+# Build
+backend/dist/
+frontend/build/
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment
+bills_env/
