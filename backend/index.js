@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import { connectDB } from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
+import billRoutes from "./routes/billRoutes.js";
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.post("/test", (req, res) => {
   res.json({ received: req.body });
 });
 app.use("/api/auth", authRoutes);
+app.use("/api/bills", billRoutes);
 
 app.get("/", (req, res) => {
   res.send("API is running...");
